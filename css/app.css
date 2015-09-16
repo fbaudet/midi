@@ -1,0 +1,46 @@
+#keys {
+	min-width:			400px;
+	position:			relative;
+}
+
+.keywhite {
+	background-color:	white;
+	border:				1px solid silver;
+	color:				black;
+	cursor:				pointer;
+	display:			inline-block;
+	height:				75px;
+	margin:				0 -3px;
+	padding:			0;
+	width:				25px;
+}
+
+.keyblack {
+	background-color:	black;
+	color:				white;
+	cursor:				pointer;
+	display:			inline-block;
+	height:				50px;
+	left:				33px;
+	position:			absolute;
+	bottom:				52px;
+	width:				16px;
+}
+
+.midi_opt {
+	height:				100px;
+}
+
+.midi_note {
+	background-color:	black;
+	color:				white;
+	display:			inline-block;
+	height:				50px;
+	margin:				5px auto;
+	margin-left:		10px;
+	text-align:			center;
+}
+
+.row>h3 {
+	margin-left:		15px;
+}
