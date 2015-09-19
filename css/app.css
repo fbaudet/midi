@@ -1,13 +1,32 @@
 #keys {
+	cursor:				cell;
 	min-width:			400px;
-	position:			relative;
+	-moz-user-select:	none;
+	-webkit-user-select:none;
+	-ms-user-select:	none;
+	-o-user-select:		none;
+	user-select:		none;
+}
+
+.key {
+
+}
+
+.keyvalue {
+	text-align: 		center;
+	font-size:			0.8em;
+	pointer-events:		none;
+	font-weight:		bold;
+	font-family:		sans-serif;
+}
+
+.octave {
+	display:			inline-block;
 }
 
 .keywhite {
 	background-color:	white;
 	border:				1px solid silver;
-	color:				black;
-	cursor:				pointer;
 	display:			inline-block;
 	height:				75px;
 	margin:				0 -3px;
@@ -15,16 +34,53 @@
 	width:				25px;
 }
 
+.keywhiteactive {
+	background-color: 	#222;
+}
+
+.keywhite .keyvalue {
+	color:				white;
+	position: 			relative;
+	top: 				57px
+}
+
+.keysblack {
+	position:			relative;
+	top:				-75px;
+}
+
 .keyblack {
 	background-color:	black;
-	color:				white;
-	cursor:				pointer;
 	display:			inline-block;
 	height:				50px;
-	left:				33px;
 	position:			absolute;
-	bottom:				52px;
+	/*top:				-75px;*/
 	width:				16px;
+}
+
+.keyblackactive {
+	background-color:	#ddd;
+}
+
+.keyblack .keyvalue {
+	color:				black;
+	padding-top: 		33px;
+}
+
+.keyblack-1 {
+	left:				13px;
+}
+.keyblack-2 {
+	left:				36px;
+}
+.keyblack-3 {
+	left:				84px;
+}
+.keyblack-4 {
+	left:				107px;
+}
+.keyblack-5 {
+	left:				130px;
 }
 
 .midi_opt {
@@ -41,6 +97,7 @@
 	text-align:			center;
 }
 
+/* OVERRIDE FOUNDATION */
 .row>h3 {
 	margin-left:		15px;
 }

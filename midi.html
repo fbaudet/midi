@@ -31,22 +31,59 @@
 	<div class="row">
 		<div class="small-12 columns">
 			<div id="keys" class="panel">
-				<h3>Clavier</h3>
-				<div id="keyswhite">
-					<div class="keywhite"></div>
-					<div class="keywhite"></div>
-					<div class="keywhite"></div>
-					<div class="keywhite"></div>
-					<div class="keywhite"></div>
-					<div class="keywhite"></div>
-					<div class="keywhite"></div>
+				<div class="octave">
+					<div class="keyswhite">
+						<div id="48" class="key keywhite"><p class="keyvalue">C</p></div>
+						<div id="50" class="key keywhite"><p class="keyvalue">50</p></div>
+						<div id="52" class="key keywhite"><p class="keyvalue">52</p></div>
+						<div id="53" class="key keywhite"><p class="keyvalue">53</p></div>
+						<div id="55" class="key keywhite"><p class="keyvalue">55</p></div>
+						<div id="57" class="key keywhite"><p class="keyvalue">57</p></div>
+						<div id="59" class="key keywhite"><p class="keyvalue">59</p></div>
+					</div>
+					<div class="keysblack">
+						<div id="49" class="key keyblack keyblack-1"><p class="keyvalue">49</p></div>
+						<div id="51" class="key keyblack keyblack-2"><p class="keyvalue">51</p></div>
+						<div id="54" class="key keyblack keyblack-3"><p class="keyvalue">54</p></div>
+						<div id="56" class="key keyblack keyblack-4"><p class="keyvalue">56</p></div>
+						<div id="58" class="key keyblack keyblack-5"><p class="keyvalue">58</p></div>
+					</div>
 				</div>
-				<div id="keysblack">
-					<div class="keyblack"></div>
-					<div class="keyblack"></div>
-					<div class="keyblack"></div>
-					<div class="keyblack"></div>
-					<div class="keyblack"></div>
+				<div class="octave">
+					<div class="keyswhite">
+						<div id="60" class="key keywhite"><p class="keyvalue">60</p></div>
+						<div id="62" class="key keywhite"><p class="keyvalue">62</p></div>
+						<div id="64" class="key keywhite"><p class="keyvalue">64</p></div>
+						<div id="65" class="key keywhite"><p class="keyvalue">65</p></div>
+						<div id="67" class="key keywhite"><p class="keyvalue">67</p></div>
+						<div id="69" class="key keywhite"><p class="keyvalue">69</p></div>
+						<div id="71" class="key keywhite"><p class="keyvalue">71</p></div>
+					</div>
+					<div class="keysblack">
+						<div id="61" class="key keyblack keyblack-1"><p class="keyvalue">61</p></div>
+						<div id="63" class="key keyblack keyblack-2"><p class="keyvalue">63</p></div>
+						<div id="66" class="key keyblack keyblack-3"><p class="keyvalue">66</p></div>
+						<div id="68" class="key keyblack keyblack-4"><p class="keyvalue">68</p></div>
+						<div id="70" class="key keyblack keyblack-5"><p class="keyvalue">70</p></div>
+					</div>
+				</div>
+				<div class="octave">
+					<div class="keyswhite">
+						<div id="72" class="key keywhite"><p class="keyvalue">72</p></div>
+						<div id="74" class="key keywhite"><p class="keyvalue">74</p></div>
+						<div id="76" class="key keywhite"><p class="keyvalue">76</p></div>
+						<div id="77" class="key keywhite"><p class="keyvalue">77</p></div>
+						<div id="79" class="key keywhite"><p class="keyvalue">79</p></div>
+						<div id="81" class="key keywhite"><p class="keyvalue">81</p></div>
+						<div id="83" class="key keywhite"><p class="keyvalue">83</p></div>
+					</div>
+					<div class="keysblack">
+						<div id="73" class="key keyblack keyblack-1"><p class="keyvalue">73</p></div>
+						<div id="75" class="key keyblack keyblack-2"><p class="keyvalue">75</p></div>
+						<div id="78" class="key keyblack keyblack-3"><p class="keyvalue">78</p></div>
+						<div id="80" class="key keyblack keyblack-4"><p class="keyvalue">80</p></div>
+						<div id="82" class="key keyblack keyblack-5"><p class="keyvalue">82</p></div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -56,7 +93,6 @@
 		<div class="small-12 columns">
 			<div class="panel">
 				<div class="row">
-					<h3>Type de note</h3>
 					<div class="midi_note"><button>o</button></div>
 					<div class="midi_note"><button>o</button></div>
 					<div class="midi_note"><button>o</button></div>
@@ -95,14 +131,23 @@
 	<div class="row">
 		<div class="small-12 columns">
 			<div class="panel">
+				<p id="pressedKey"></p>
 				Partition<hr><hr><hr><hr><hr>
 			</div>
 		</div>
 	</div>
 
 	<div class="row">
+		<div class="small-12 columns">
+			<div class="panel">
+				<p id="exportText"></p>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
 		<div class="small-6 columns">
-			<a href="" class="small round button">Export MIDI</a><br/>
+			<a id="exportMidi" href="" class="small round button">Export MIDI</a><br/>
 		</div>
 	</div>
 
