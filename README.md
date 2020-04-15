@@ -1,6 +1,6 @@
 # MIDI
 
-This is a repository for a huge project using midi file and musical composition creation
+Project using midi file and musical composition creation
 
 [2015/09/14]
 
